@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const PRODUCTS_REST_API_URL = 'http://localhost:8080/product/list/all';
-
+const PRODUCTS_REST_API_URL = process.env.REACT_APP_PRODUCTS_REST_API_URL || 'http://localhost:8180/product/list/all';
 class ProductService {
 
     getProducts(){

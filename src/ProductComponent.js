@@ -36,12 +36,12 @@ class ProductComponent extends React.Component {
     {
         this.state.products.map(
     product =>
-    <tr key = {product.id}>
-<td> {product.id}</td>
+    <tr key = {product.productId}>
+<td> {product.productId}</td>
 <td> {product.name}</td>
 <td> {product.description}</td>
 <td> {product.price}</td>
-<td> {product.created_at}</td>
+<td> {product.createdDate}</td>
 </tr>
 )
 }
